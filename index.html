@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genie Workforce | Weekend Jobs & Event Helper</title>
+    <link rel="stylesheet" href="GenieWorkforce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        
+        <nav class="navbar">
+    <div class="brand-container" onclick="showSection('home-view')">
+       
+        <div class="logo">Genie<span>Work</span>force</div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home-view')">Home</a></li>
+        <li><a href="#" onclick="showSection('how-view')">How It Works</a></li>
+        <li><a href="#" onclick="showSection('faq-view')">FAQ</a></li>
+        <li><a href="#" class="btn-login" onclick="showSection('login-view')">Login / Sign Up</a></li>
+    </ul>
+</nav>
+        
+    </header>
+    <div class="slider-container">
+    <div class="slider">
+        <div class="slide active">
+            <img src="https://eiexperience.com/wp-content/uploads/2017/07/shutterstock_290627387-980x653.jpg" alt="Workforce">
+            <div class="slide-content">
+                <h2>Find the Best Workforce</h2>
+                <p>Connecting events with professional staff across India.</p>
+            </div>
+        </div>
+       
+</div>
+    </div>
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+    </div>
+</div>
+    <section id="login-view" style="display:none; padding: 50px; text-align: center; font-family: sans-serif;">
+    <div style="max-width: 400px; margin: auto;">
+        <h2 style="font-size: 32px; color: #333; margin-bottom: 20px;">Login to Admin</h2>
+        
+        <form onsubmit="handleLogin(event)" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" id="loginUser" placeholder="Username" required 
+                   style="padding: 15px; border: 2px solid #333; border-radius: 5px; font-size: 18px;">
+
+            <input type="tel" id="loginMobile" placeholder="Mobile Number" required 
+                   pattern="[0-9]{10}" title="Enter 10 digit mobile number"
+                   style="padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px;">
+
+            <input type="password" id="loginPass" placeholder="Password" required 
+                   style="padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px;">
+
+            <button type="submit" 
+                    style="padding: 15px; background: #007bff; color: white; border: none; border-radius: 5px; font-size: 20px; font-weight: bold; cursor: pointer; margin-top: 10px;">
+                Login
+            </button>
+        </form>
+    </div>
+</section>
+
+<section id="admin-view" style="display:none; padding: 50px; text-align: center;">
+    <h2>Post a New Wish</h2>
+    <form id="postWishForm" style="max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 10px;">
+        <input type="text" id="wishTitle" placeholder="Event Title" required style="padding:10px;">
+        <input type="text" id="wishLocation" placeholder="Location" required style="padding:10px;">
+        <input type="text" id="wishRole" placeholder="Role (e.g. 100 Boys/Girls)" required style="padding:10px;">
+        <input type="text" id="wishDate" placeholder="Date (DD-MM-YYYY)" required style="padding:10px;">
+        <input type="number" id="wishPayment" placeholder="payment" required style="padding:10px;">
+        <button type="submit" style="padding:15px; background: #28a745; color: white; border: none; cursor: pointer;">Post Wish</button>
+    </form>
+</section>
+
+
+   
+<main id="main-content">
+    <section id="home-view">
+        <div class="hero">
+            <h1>Earn While You Learn</h1>
+     
+            <button class="cta-btn" onclick="showSection('search-view')">Find a Wish</button>
+        
+        </div>
+        <div class="wishes-section">
+            <h2>Hot Wishes</h2>
+            <div class="wishes-grid" id="wishes-container"></div>
+        </div>
+    </section>
+
+    <section id="search-view" style="display:none; padding: 50px 10%;">
+        <h2>Search Wishes</h2>
+        <input type="text" id="searchInput" placeholder="Search by city or role (e.g. Pune)..." 
+               style="width:100%; padding:15px; margin:20px 0; border-radius:5px; border:1px solid #ccc;">
+        <div class="wishes-grid" id="search-results"></div>
+    </section>
+
+    <section id="how-view" style="display:none; padding: 50px 10%; line-height:1.8;">
+        <h2>How Genie Workforce   Temporary & Event Job Process in Pune</h2>
+        <p>At Genie Workforce, we directly employ individuals for temporary jobs... At Genie Workforce, we directly employ individuals for temporary jobs in Pune, including short-term and event-based assignments. Our process is designed to ensure transparency, punctuality, and smooth coordination for both the Genies and the clients they assist.<br>
+
+1. Finding and Applying for Work
+All event helper and part time job opportunities in Pune are listed on our website and app, including venue, date, time, and dress code details. Genies can browse through these listings and apply for the tasks that best match their preferences and availability.<br>
+
+2. Selection Process
+After showing interest, shortlisted Genies receive a verification call from the GenieWorkforce team. The selection is based on profile completion, skills, reliability, and work history. Only qualified applicants are confirmed for available roles as event staff in Pune.<br>
+
+3. Joining the WhatsApp Group
+Selected Genies are added to a dedicated WhatsApp group for updates and real-time coordination before and during the event.<br>
+
+4. Task Preparation & Check-in
+Genies must check in via the app 1 hour before the task begins and reach the venue 30 minutes early. On arrival, they must contact the event coordinator through the WhatsApp group for instructions.<br>
+
+5. During the Task
+Genies are expected to maintain discipline, follow event guidelines, and perform their assigned responsibilities responsibly. Professionalism during these temporary jobs in Pune can help increase eligibility for future assignments.<br>
+
+6. Check-out & Payment
+After completing the task, Genies check out via the app. If attendance and check-ins are logged correctly, payment is processed within 7 days through Cashfree   redeemable via bank or UPI.<br>
+
+7. Experience Certificate & Profile Sharing
+Within 10 days of task completion, Genies receive an experience certificate that highlights their event contributions. A public profile showcasing completed work, reviews, and ratings is also available, serving as a verified resume for future event opportunities.</p>
+        </section>
+
+    <section id="faq-view" style="display:none; padding: 50px 10%;">
+        <h2>Frequently Asked Questions</h2>
+        <ul style="list-style:none; padding:0;">
+            <li style="margin-bottom:15px; font-weight:bold;">How much can I earn from weekend event jobs in Pune?</li>
+            <p>FAQ
+How much can I earn from weekend event jobs in Pune?
+
+Earnings depend on the role and duration. Short weekend jobs in Pune can pay for a few hours of work, <br>while longer event staff assignments may offer higher pay. Skilled tasks like stall management or promotional staff generally provide better payouts.
+
+Are there opportunities for temporary event staff in Pune besides weekends?<br>
+
+Can companies hire event staff in Pune through GenieWorkforce?<br>
+
+Do I need prior experience for weekend part-time jobs in Pune?<br>
+
+How do I apply for event staff jobs in Pune?<br>
+
+Can students apply for event helper jobs in Pune?<br>
+
+What types of weekend jobs are available in Pune on GenieWorkforce?<br>
+
+What should I do if I haven t received my payment?<br>
+
+What kind of work is available on GenieWorkforce?<br>
+
+How will I receive my payment?<br>
+
+When will I receive my payment?</br>
+
+How can I increase my earnings on GenieWorkforce?<br>
+
+Why am I not getting selected for any tasks?<br>
+
+Where can I ask questions about a specific task?<br>
+
+How can I join the WhatsApp group for a task?<br>
+
+How do I choose the right tasks for me?<br>
+
+Do I need to pay any fees to work on GenieWorkforce tasks?</p>
+            </ul>
+    </section>
+    
+
+   
+    <div id="loginModal" class="modal-overlay">
+    <div class="login-box">
+        <div class="login-header">
+            <span>Log In</span>
+            <span class="close-x" onclick="closeLogin()">&times;</span>
+        </div>
+        <div class="login-body">
+            <div class="input-group">
+                <label>Email:</label>
+                <input type="email" id="loginEmail">
+            </div>
+            <div class="input-group">
+                <label>Password:</label>
+                <input type="password" id="loginPass">
+            </div>
+            
+            <div class="login-links">
+                <a href="#">Forgot your Password?</a> / <a href="#">Login With OTP</a>
+            </div>
+
+            <div class="login-footer">
+                <span>Click <a href="#">here to register</a> or</span>
+                <button class="btn-sign-in">Sign In</button>
+                <span>or</span>
+                <button class="btn-google">
+                    <img src="C:\Users\Admin\Desktop\Tushar\amazon\images.jpg" alt="G">
+                    Sign in with Google
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="how-it-works">
+        <h2>How GenieWorkforce works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <i class="fas fa-search"></i>
+                <h3>1. Find Work</h3>
+                <p>Browse listings including venue, date, time, and dress code details.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-check-circle"></i>
+                <h3>2. Get Selected</h3>
+                <p>Shortlisted Genies receive a verification call based on skills and reliability.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>3. Get Paid</h3>
+                <p>Check-out via app and receive secure payment through Cashfree within 7 days.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="about-map-section">
+    <div class="about-container">
+        <div class="about-content">
+            <h2 class="section-title">How Genieworkforce Works</h2>
+            <div class="about-text">
+                <p>Genieworkforce Pune mein part-time jobs ke zariye extra income kamane ke flexible mauke deta hai. Hum marathons, exhibitions, aur corporate events ke liye logo ko hire karte hain.</p>
+                <p><strong>Office Address:</strong><br>
+                Sunny's World, Pashan Sus Road, Sr. No. 217, Sus Ln,<br>
+                Near Mumbai-Pune Bypass Highway, Pune, Maharashtra 411021</p>
+            </div>
+            <h3 class="tagline-text">Make A Wish Genie Will Accomplish!</h3>
+        </div>
+
+        <div class="map-wrapper">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.353381656037!2d73.76342897519253!3d18.558117782544252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bc051c5f38eb%3A0xfe767dfeff11d16b!2sSunny&#39;s%20World!5e0!3m2!1sen!2sin!4v1713271200000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                <div class="map-badges">
+                    <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a>
+                    <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>📧 <a href="mailto:genieworkforce@gmail.com">genieworkforce@gmail.com</a></p>
+            <p>📞 <a href="https://wa.me/91 8669453375">+91 8669453375</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#" onclick="showSection('home-view')">Home</a></li>
+                <li><a href="#" onclick="showSection('how-view')">How It Works</a></li>
+                <li><a href="#" onclick="showSection('faq-view')">FAQ</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Get In Touch</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="IN"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG"></a>
+                <a href="https://wa.me/919158718787"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA"></a>
+            </div>
+        </div>
+
+        <div class="footer-column app-buttons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" style="width: 140px;"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="width: 140px; margin-top: 10px;"></a>
+        </div>
+    </div>
+</footer>
+ <footer>
+        <p>&copy; 2024 GenieOnHire. All Rights Reserved.</p>
+    </footer>
+
+    <script src="GenieWorkforce.js"></script>
+</body>
+</html>
